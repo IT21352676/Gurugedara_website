@@ -2,7 +2,7 @@ import { Text, Button, Paper, Drawer, Modal, Image } from "@mantine/core";
 import { useDisclosure, useMediaQuery } from "@mantine/hooks";
 import { IconCode, IconMenu2, IconRocket } from "@tabler/icons-react";
 import { useState } from "react";
-import Landing from "./Landing";
+
 import logo from "../images/logo.png";
 
 interface Props {
@@ -46,7 +46,7 @@ function TopBar({ onNavigate }: Props) {
               content: { backgroundColor: "#CD565630", opacity: 0 },
               header: {
                 backgroundColor: "#CD565630",
-                //color: "#F9FAFB",
+
                 borderBottomStyle: "solid",
                 borderBottomColor: "#CD565630",
                 borderBottomWidth: 1,
@@ -70,7 +70,7 @@ function TopBar({ onNavigate }: Props) {
                 fz={16}
                 fw={"normal"}
                 onClick={() => {
-                  onNavigate.about();
+                  onNavigate.home();
                   close();
                 }}
               >
@@ -81,7 +81,7 @@ function TopBar({ onNavigate }: Props) {
                 fz={16}
                 fw={"normal"}
                 onClick={() => {
-                  onNavigate.work();
+                  onNavigate.domain();
                   close();
                 }}
               >
@@ -93,7 +93,7 @@ function TopBar({ onNavigate }: Props) {
                 fz={16}
                 fw={"normal"}
                 onClick={() => {
-                  onNavigate.skills();
+                  onNavigate.milestone();
                   close();
                 }}
               >
@@ -104,7 +104,7 @@ function TopBar({ onNavigate }: Props) {
                 fz={16}
                 fw={"normal"}
                 onClick={() => {
-                  onNavigate.testimonials();
+                  onNavigate.document();
                   close();
                 }}
               >
@@ -115,7 +115,7 @@ function TopBar({ onNavigate }: Props) {
                 fz={16}
                 fw={"normal"}
                 onClick={() => {
-                  onNavigate.contact();
+                  onNavigate.presentation();
                   close();
                 }}
               >
@@ -126,7 +126,7 @@ function TopBar({ onNavigate }: Props) {
                 fz={16}
                 fw={"normal"}
                 onClick={() => {
-                  onNavigate.contact();
+                  onNavigate.about();
                   close();
                 }}
               >
@@ -163,7 +163,7 @@ function TopBar({ onNavigate }: Props) {
               <Text
                 fw={600}
                 fz={16}
-                onClick={onNavigate.about}
+                onClick={onNavigate.home}
                 style={{
                   cursor: "pointer",
                   transition: "color 0.2s",
@@ -178,7 +178,7 @@ function TopBar({ onNavigate }: Props) {
               <Text
                 fw={600}
                 fz={16}
-                onClick={onNavigate.skills}
+                onClick={onNavigate.domain}
                 style={{
                   cursor: "pointer",
                   transition: "color 0.2s",
@@ -193,7 +193,7 @@ function TopBar({ onNavigate }: Props) {
               <Text
                 fw={600}
                 fz={16}
-                onClick={onNavigate.work}
+                onClick={onNavigate.milestone}
                 style={{
                   cursor: "pointer",
                   transition: "color 0.2s",
@@ -208,7 +208,7 @@ function TopBar({ onNavigate }: Props) {
               <Text
                 fw={600}
                 fz={16}
-                onClick={onNavigate.testimonials}
+                onClick={onNavigate.document}
                 style={{
                   cursor: "pointer",
                   transition: "color 0.2s",
@@ -223,7 +223,7 @@ function TopBar({ onNavigate }: Props) {
               <Text
                 fw={600}
                 fz={16}
-                onClick={onNavigate.contact}
+                onClick={onNavigate.presentation}
                 style={{
                   cursor: "pointer",
                   transition: "color 0.2s",
@@ -238,7 +238,7 @@ function TopBar({ onNavigate }: Props) {
               <Text
                 fw={600}
                 fz={16}
-                onClick={onNavigate.contact}
+                onClick={onNavigate.about}
                 style={{
                   cursor: "pointer",
                   transition: "color 0.2s",

@@ -7,7 +7,7 @@ function BottomBar() {
 
   return (
     <Paper
-      bg={"#111827"}
+      bg={"#CD565630"}
       pl={isMobile ? 16 : 80}
       pr={isMobile ? 16 : 80}
       pt={16}
@@ -17,7 +17,6 @@ function BottomBar() {
       {isMobile ? (
         <div
           style={{
-            color: "#D1D5DB",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -35,7 +34,7 @@ function BottomBar() {
             <Text>2025</Text>
             <div
               style={{
-                backgroundColor: "#D1D5DB",
+                backgroundColor: "#000000",
                 width: "1px",
                 height: 15,
               }}
@@ -43,13 +42,12 @@ function BottomBar() {
             <Text>Designed and coded with ❤️</Text>
           </div>
           <div>
-            <Text>by Hirusha Sasanka</Text>
+            <Text>by Team Guru Gedara</Text>
           </div>
         </div>
       ) : (
         <div
           style={{
-            color: "#D1D5DB",
             display: "flex",
             gap: 8,
             alignItems: "center",
@@ -60,12 +58,12 @@ function BottomBar() {
           <Text>2025</Text>
           <div
             style={{
-              backgroundColor: "#D1D5DB",
+              backgroundColor: "#000000",
               width: "1px",
               height: 15,
             }}
           />
-          <Text>Designed and coded with ❤️️ by Hirusha Sasanka</Text>
+          <Text>Designed and coded with ❤️️ by Team Guru Gedara</Text>
         </div>
       )}
     </Paper>

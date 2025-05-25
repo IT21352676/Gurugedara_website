@@ -25,6 +25,13 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import logoImage from "../images/logo.png";
+import tensorflow from "../images/Tensorflow_logo.svg.png";
+import flask from "../images/flask.png";
+import pythonImage from "../images/python.png";
+import vscode from "../images/vscode-logo-blue-ribbon-icon-software-development-tool.png";
+import androidstudio from "../images/android-studio-icon.png";
+import github from "../images/github-logo.png";
+import jupiternotebook from "../images/jupyter-notebook.png";
 
 function Domain() {
   const isMobile = useMediaQuery("(max-width: 850px)");
@@ -86,183 +93,176 @@ function Domain() {
             Research gap
           </Text>{" "}
         </Grid.Col>
-        <Grid mt={20}>
-          <Grid.Col
-            span={isMobile ? 12 : 6}
-            style={{ display: "grid", gap: 10 }}
+
+        <Grid.Col
+          span={12}
+          style={{ display: "grid", gap: 40, justifyContent: "center" }}
+        >
+          <div
+            style={{
+              border: "1px solid #CD5656",
+              borderRadius: 20,
+              padding: 25,
+            }}
           >
-            <div
-              style={{
-                border: "1px solid #CD5656",
-                borderRadius: 20,
-                padding: 25,
-              }}
+            <Text fw={700} fz={25}>
+              1. Identification of Dyslexia and Dyscalculia in Early Education
+            </Text>
+            <List
+              icon={
+                <ThemeIcon color="#CD5656" size={24} radius="xl">
+                  <IconCircleFilled size={10} />
+                </ThemeIcon>
+              }
+              mt={40}
+              spacing="md"
+              size={"xl"}
+              center
             >
-              <Text fw={700} fz={25}>
-                1. Identification of Dyslexia and Dyscalculia in Early Education
-              </Text>
-              <List
-                icon={
-                  <ThemeIcon color="#CD5656" size={24} radius="xl">
-                    <IconCircleFilled size={10} />
-                  </ThemeIcon>
-                }
-                mt={40}
-                spacing="md"
-                size={"xl"}
-                center
-              >
-                <List.Item>
-                  <span style={{ fontWeight: 700 }}>Gap:</span> Most Sri Lankan
-                  schools lack systematic, data-driven approaches to detect
-                  learning disabilities in the early stages of education.{" "}
-                </List.Item>
-                <List.Item>
-                  <span style={{ fontWeight: 700 }}>Justification:</span>{" "}
-                  Teachers often rely on subjective observations without the
-                  support of diagnostic tools or psychological assessments,
-                  leading to underdiagnosis or misdiagnosis.
-                </List.Item>
-                <List.Item>
-                  <span style={{ fontWeight: 700 }}>Need:</span> There is a
-                  pressing need for machine learning-based diagnostic models
-                  trained on localized data to assist in early identification
-                  and intervention.
-                </List.Item>
-              </List>
-            </div>
+              <List.Item>
+                <span style={{ fontWeight: 700 }}>Gap:</span> Most Sri Lankan
+                schools lack systematic, data-driven approaches to detect
+                learning disabilities in the early stages of education.{" "}
+              </List.Item>
+              <List.Item>
+                <span style={{ fontWeight: 700 }}>Justification:</span> Teachers
+                often rely on subjective observations without the support of
+                diagnostic tools or psychological assessments, leading to
+                underdiagnosis or misdiagnosis.
+              </List.Item>
+              <List.Item>
+                <span style={{ fontWeight: 700 }}>Need:</span> There is a
+                pressing need for machine learning-based diagnostic models
+                trained on localized data to assist in early identification and
+                intervention.
+              </List.Item>
+            </List>
+          </div>
 
-            <div
-              style={{
-                border: "1px solid #CD5656",
-                borderRadius: 20,
-                padding: 25,
-              }}
-            >
-              {" "}
-              <Text fw={700} fz={25}>
-                3. Adaptive Mathematics Instruction for Students with
-                Dyscalculia
-              </Text>
-              <List
-                icon={
-                  <ThemeIcon color="#CD5656" size={24} radius="xl">
-                    <IconCircleFilled size={10} />
-                  </ThemeIcon>
-                }
-                mt={40}
-                spacing="md"
-                size={"xl"}
-                center
-              >
-                <List.Item>
-                  <span style={{ fontWeight: 700 }}>Gap:</span> No current
-                  systems offer adaptive math instruction designed for children
-                  with dyscalculia within the Sri Lankan context.{" "}
-                </List.Item>
-                <List.Item>
-                  <span style={{ fontWeight: 700 }}>Justification:</span>{" "}
-                  Mathematics content delivery often follows a one-size-fits-all
-                  approach, failing to accommodate cognitive differences in
-                  number sense, sequencing, and spatial understanding.
-                </List.Item>
-                <List.Item>
-                  <span style={{ fontWeight: 700 }}>Need:</span> Machine
-                  learning models that assess individual weaknesses in math and
-                  personalize learning pathways are essential to support these
-                  students effectively.
-                </List.Item>
-              </List>
-            </div>
-          </Grid.Col>
-
-          <Grid.Col
-            span={isMobile ? 12 : 6}
-            style={{ display: "grid", gap: 10 }}
+          <div
+            style={{
+              border: "1px solid #CD5656",
+              borderRadius: 20,
+              padding: 25,
+            }}
           >
-            <div
-              style={{
-                border: "1px solid #CD5656",
-                borderRadius: 20,
-                padding: 25,
-              }}
+            {" "}
+            <Text fw={700} fz={25}>
+              3. Adaptive Mathematics Instruction for Students with Dyscalculia
+            </Text>
+            <List
+              icon={
+                <ThemeIcon color="#CD5656" size={24} radius="xl">
+                  <IconCircleFilled size={10} />
+                </ThemeIcon>
+              }
+              mt={40}
+              spacing="md"
+              size={"xl"}
+              center
             >
-              <Text fw={700} fz={25}>
-                2. Personalized Sinhala Language Learning for Dyslexic Students
-              </Text>
-              <List
-                icon={
-                  <ThemeIcon color="#CD5656" size={24} radius="xl">
-                    <IconCircleFilled size={10} />
-                  </ThemeIcon>
-                }
-                mt={40}
-                spacing="md"
-                size={"xl"}
-                center
-              >
-                <List.Item>
-                  <span style={{ fontWeight: 700 }}>Gap:</span> Existing digital
-                  education platforms rarely provide Sinhala language content
-                  tailored for students with dyslexia.{" "}
-                </List.Item>
-                <List.Item>
-                  <span style={{ fontWeight: 700 }}>Justification:</span>{" "}
-                  Sinhala’s complex script, vowel modifiers, and phonetic
-                  nuances can pose unique challenges for dyslexic learners, yet
-                  adaptive language learning tools remain underdeveloped.
-                </List.Item>
-                <List.Item>
-                  <span style={{ fontWeight: 700 }}>Need:</span> Development of
-                  AI-driven, multimedia-supported Sinhala learning modules that
-                  accommodate visual and auditory processing difficulties.
-                </List.Item>
-              </List>
-            </div>
+              <List.Item>
+                <span style={{ fontWeight: 700 }}>Gap:</span> No current systems
+                offer adaptive math instruction designed for children with
+                dyscalculia within the Sri Lankan context.{" "}
+              </List.Item>
+              <List.Item>
+                <span style={{ fontWeight: 700 }}>Justification:</span>{" "}
+                Mathematics content delivery often follows a one-size-fits-all
+                approach, failing to accommodate cognitive differences in number
+                sense, sequencing, and spatial understanding.
+              </List.Item>
+              <List.Item>
+                <span style={{ fontWeight: 700 }}>Need:</span> Machine learning
+                models that assess individual weaknesses in math and personalize
+                learning pathways are essential to support these students
+                effectively.
+              </List.Item>
+            </List>
+          </div>
 
-            <div
-              style={{
-                border: "1px solid #CD5656",
-                borderRadius: 20,
-                padding: 25,
-              }}
+          <div
+            style={{
+              border: "1px solid #CD5656",
+              borderRadius: 20,
+              padding: 25,
+            }}
+          >
+            <Text fw={700} fz={25}>
+              2. Personalized Sinhala Language Learning for Dyslexic Students
+            </Text>
+            <List
+              icon={
+                <ThemeIcon color="#CD5656" size={24} radius="xl">
+                  <IconCircleFilled size={10} />
+                </ThemeIcon>
+              }
+              mt={40}
+              spacing="md"
+              size={"xl"}
+              center
             >
-              <Text fw={700} fz={25}>
-                4. Social Skills Development Integration
-              </Text>
-              <List
-                icon={
-                  <ThemeIcon color="#CD5656" size={24} radius="xl">
-                    <IconCircleFilled size={10} />
-                  </ThemeIcon>
-                }
-                mt={40}
-                spacing="md"
-                size={"xl"}
-                center
-              >
-                <List.Item>
-                  <span style={{ fontWeight: 700 }}>Gap:</span> Social
-                  development is largely overlooked in most learning systems
-                  targeting students with cognitive disabilities.{" "}
-                </List.Item>
-                <List.Item>
-                  <span style={{ fontWeight: 700 }}>Justification:</span>{" "}
-                  Children with dyslexia and dyscalculia often experience low
-                  self-esteem and social withdrawal, yet existing tools do not
-                  integrate social skills training or collaborative learning
-                  features.
-                </List.Item>
-                <List.Item>
-                  <span style={{ fontWeight: 700 }}>Need:</span> Inclusion of
-                  socially interactive modules such as guided peer tasks,
-                  communication prompts, and emotional recognition exercises
-                  supported by behavioural analytics.
-                </List.Item>
-              </List>
-            </div>
-          </Grid.Col>
-        </Grid>
+              <List.Item>
+                <span style={{ fontWeight: 700 }}>Gap:</span> Existing digital
+                education platforms rarely provide Sinhala language content
+                tailored for students with dyslexia.{" "}
+              </List.Item>
+              <List.Item>
+                <span style={{ fontWeight: 700 }}>Justification:</span>{" "}
+                Sinhala’s complex script, vowel modifiers, and phonetic nuances
+                can pose unique challenges for dyslexic learners, yet adaptive
+                language learning tools remain underdeveloped.
+              </List.Item>
+              <List.Item>
+                <span style={{ fontWeight: 700 }}>Need:</span> Development of
+                AI-driven, multimedia-supported Sinhala learning modules that
+                accommodate visual and auditory processing difficulties.
+              </List.Item>
+            </List>
+          </div>
+
+          <div
+            style={{
+              border: "1px solid #CD5656",
+              borderRadius: 20,
+              padding: 25,
+            }}
+          >
+            <Text fw={700} fz={25}>
+              4. Social Skills Development Integration
+            </Text>
+            <List
+              icon={
+                <ThemeIcon color="#CD5656" size={24} radius="xl">
+                  <IconCircleFilled size={10} />
+                </ThemeIcon>
+              }
+              mt={40}
+              spacing="md"
+              size={"xl"}
+              center
+            >
+              <List.Item>
+                <span style={{ fontWeight: 700 }}>Gap:</span> Social development
+                is largely overlooked in most learning systems targeting
+                students with cognitive disabilities.{" "}
+              </List.Item>
+              <List.Item>
+                <span style={{ fontWeight: 700 }}>Justification:</span> Children
+                with dyslexia and dyscalculia often experience low self-esteem
+                and social withdrawal, yet existing tools do not integrate
+                social skills training or collaborative learning features.
+              </List.Item>
+              <List.Item>
+                <span style={{ fontWeight: 700 }}>Need:</span> Inclusion of
+                socially interactive modules such as guided peer tasks,
+                communication prompts, and emotional recognition exercises
+                supported by behavioural analytics.
+              </List.Item>
+            </List>
+          </div>
+        </Grid.Col>
+
         <Grid style={{ marginTop: 80 }}>
           <Grid.Col span={isMobile ? 12 : 6} mt={80}>
             <Text fw={700} fz={30}>
@@ -282,6 +282,8 @@ function Domain() {
               resulting in poor academic performance and underdeveloped social
               skills.{" "}
             </Text>
+          </Grid.Col>
+          <Grid.Col span={isMobile ? 12 : 6} mt={isMobile ? 0 : 125}>
             <Text fw={400} fz={20} mt={40} pr={40}>
               Although machine learning has shown promise in various sectors,
               its application in special education within the Sri Lankan context
@@ -296,7 +298,7 @@ function Domain() {
             </Text>
           </Grid.Col>
 
-          <Grid.Col span={isMobile ? 12 : 6} mt={80}>
+          <Grid.Col mt={80}>
             <Text fw={700} fz={30}>
               Research objectives
             </Text>
@@ -346,7 +348,9 @@ function Domain() {
                 students with learning disabilities.
               </List.Item>
             </List>
-            <Text fw={700} fz={30} mt={40}>
+          </Grid.Col>
+          <Grid.Col mt={80}>
+            <Text fw={700} fz={30}>
               Technologies
             </Text>
 
@@ -361,13 +365,128 @@ function Domain() {
               spacing="md"
               size={"xl"}
               center
-            >
-              <List.Item>Tensorflow</List.Item>
-              <List.Item>Flask</List.Item>
-              <List.Item>Jupyter Notebook</List.Item>
-              <List.Item>Android studio</List.Item>
-              <List.Item>Github</List.Item>
-            </List>
+            ></List>
+          </Grid.Col>
+          <Grid.Col mt={40}>
+            <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Image
+                  src={tensorflow}
+                  alt={"tensorflow"}
+                  w={70}
+                  fit="contain"
+                />{" "}
+                <Text fz={20} fw={400}>
+                  Tensorflow
+                </Text>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Image src={flask} alt={"tensorflow"} w={70} fit="contain" />{" "}
+                <Text fz={20} fw={400}>
+                  Flask
+                </Text>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Image src={github} alt={"tensorflow"} w={70} fit="contain" />{" "}
+                <Text fz={20} fw={400}>
+                  Github
+                </Text>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Image
+                  src={androidstudio}
+                  alt={"tensorflow"}
+                  w={70}
+                  fit="contain"
+                />{" "}
+                <Text fz={20} fw={400}>
+                  Android studio
+                </Text>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Image
+                  src={jupiternotebook}
+                  alt={"tensorflow"}
+                  w={70}
+                  fit="contain"
+                />{" "}
+                <Text fz={20} fw={400}>
+                  Jupyter Notebook
+                </Text>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Image
+                  src={pythonImage}
+                  alt={"tensorflow"}
+                  w={70}
+                  fit="contain"
+                />{" "}
+                <Text fz={20} fw={400}>
+                  Python
+                </Text>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                }}
+              >
+                {" "}
+                <Image
+                  src={vscode}
+                  alt={"tensorflow"}
+                  w={70}
+                  fit="contain"
+                />{" "}
+                <Text fz={20} fw={400}>
+                  Vs code
+                </Text>
+              </div>
+            </div>
           </Grid.Col>
         </Grid>
       </Grid>
