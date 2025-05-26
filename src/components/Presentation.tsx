@@ -53,12 +53,14 @@ function Presentation() {
           }}
         >
           <Paper
+            w={350}
             bg={"#CD565670"}
             p={30}
             radius={20}
             style={{
-              display: "grid",
-              justifyContent: "center",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
               textAlign: "center",
             }}
           >
@@ -73,6 +75,8 @@ function Presentation() {
               <Text fz={18} fw={300}>
                 23 August 2024
               </Text>{" "}
+            </div>
+            <div>
               <Anchor
                 target="_blank"
                 href="https://drive.google.com/drive/folders/1eIrfAwIliDDSiJjdb2Oj4PKXFz2h7rJu?usp=sharing"
@@ -86,12 +90,14 @@ function Presentation() {
           </Paper>
 
           <Paper
+            w={350}
             bg={"#CD565670"}
             p={30}
             radius={20}
             style={{
-              display: "grid",
-              justifyContent: "center",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
               textAlign: "center",
             }}
           >
@@ -106,6 +112,8 @@ function Presentation() {
               <Text fz={18} fw={300}>
                 8 December 2024
               </Text>
+            </div>
+            <div>
               <Anchor
                 target="_blank"
                 href="https://drive.google.com/drive/folders/1uj3M_WSYY4aOloBt5FFOeqO2bDtUKW5E?usp=sharing"
@@ -119,12 +127,14 @@ function Presentation() {
           </Paper>
 
           <Paper
+            w={350}
             bg={"#CD565670"}
             p={30}
             radius={20}
             style={{
-              display: "grid",
-              justifyContent: "center",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
               textAlign: "center",
             }}
           >
@@ -139,6 +149,8 @@ function Presentation() {
               <Text fz={18} fw={300}>
                 18 March 2025
               </Text>
+            </div>
+            <div>
               <Anchor
                 target="_blank"
                 href="https://drive.google.com/drive/folders/1J_Uo_vaQPJ4kemJVRT0OSUVDSl0LuKs8?usp=sharing"
@@ -152,12 +164,14 @@ function Presentation() {
           </Paper>
 
           <Paper
+            w={350}
             bg={"#CD565670"}
             p={30}
             radius={20}
             style={{
-              display: "grid",
-              justifyContent: "center",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
               textAlign: "center",
             }}
           >
@@ -172,6 +186,8 @@ function Presentation() {
               <Text fz={18} fw={300}>
                 26 May 2025
               </Text>
+            </div>
+            <div>
               <Anchor
                 target="_blank"
                 href="https://drive.google.com/drive/folders/1ekXTCF5tAOelK4x7fQ7T1eamjHv7yUw9?usp=sharing"

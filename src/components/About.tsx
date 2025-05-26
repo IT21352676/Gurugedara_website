@@ -66,6 +66,7 @@ function About() {
           data-aos="fade-up"
         >
           <Paper
+            miw={350}
             h={300}
             p={30}
             radius={20}
@@ -98,6 +99,7 @@ function About() {
             </div>
           </Paper>
           <Paper
+            miw={350}
             h={300}
             p={30}
             radius={20}
@@ -134,6 +136,7 @@ function About() {
             </div>
           </Paper>
           <Paper
+            miw={350}
             h={300}
             p={30}
             radius={20}
@@ -173,6 +176,7 @@ function About() {
           data-aos="fade-up"
         >
           <Paper
+            miw={350}
             h={300}
             p={30}
             radius={20}
@@ -205,6 +209,7 @@ function About() {
             </div>
           </Paper>
           <Paper
+            miw={350}
             h={300}
             p={30}
             radius={20}
@@ -236,6 +241,7 @@ function About() {
             </div>
           </Paper>
           <Paper
+            miw={350}
             h={300}
             p={30}
             radius={20}
@@ -268,6 +274,7 @@ function About() {
           </Paper>
 
           <Paper
+            miw={350}
             h={300}
             p={30}
             radius={20}

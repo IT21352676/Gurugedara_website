@@ -51,7 +51,7 @@ function Documents() {
             </Text>
           </Paper>
         </Grid.Col>
-        <Grid.Col mt={80}>
+        <Grid.Col mt={80} data-aos="fade-up">
           <div style={{ display: "flex", justifyContent: "space-evenly" }}>
             <Anchor
               href="https://drive.google.com/drive/folders/1YHNJXvd883obT925hgkX-hRsM54YFc4k?usp=sharing"
