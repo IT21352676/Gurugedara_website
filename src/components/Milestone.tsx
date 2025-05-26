@@ -56,6 +56,7 @@ function Milestone() {
               gap: 20,
               justifyContent: "space-between",
             }}
+            data-aos="fade-up"
           >
             <Paper
               w={"90%"}
@@ -64,8 +65,15 @@ function Milestone() {
               radius={20}
               style={{ display: "grid", alignItems: "center" }}
             >
-              <Text fz={30} fw={"normal"}>
-                • Project Proposal Report
+              <Text
+                fz={30}
+                fw={"normal"}
+                style={{ display: "flex", justifyContent: "space-between" }}
+              >
+                • Project Proposal Report{" "}
+                <Text fz={20} fw={"normal"}>
+                  Marks-12%
+                </Text>
               </Text>
               <Text fz={20} fw={"normal"}>
                 The proposal report for the project. Report includes the project
@@ -89,6 +97,7 @@ function Milestone() {
               gap: 20,
               justifyContent: "space-between",
             }}
+            data-aos="fade-up"
           >
             <Paper
               w={"90%"}
@@ -97,8 +106,15 @@ function Milestone() {
               radius={20}
               style={{ display: "grid", alignItems: "center" }}
             >
-              <Text fz={30} fw={"normal"}>
-                • Project Proposal Presentation
+              <Text
+                fz={30}
+                fw={"normal"}
+                style={{ display: "flex", justifyContent: "space-between" }}
+              >
+                • Project Proposal Presentation{" "}
+                <Text fz={20} fw={"normal"}>
+                  Marks-12%
+                </Text>
               </Text>
               <Text fz={20} fw={"normal"}>
                 The proposal is formally presented.
@@ -121,6 +137,7 @@ function Milestone() {
               gap: 20,
               justifyContent: "space-between",
             }}
+            data-aos="fade-up"
           >
             <Paper
               w={"90%"}
@@ -129,7 +146,11 @@ function Milestone() {
               radius={20}
               style={{ display: "grid", alignItems: "center" }}
             >
-              <Text fz={30} fw={"normal"}>
+              <Text
+                fz={30}
+                fw={"normal"}
+                style={{ display: "flex", justifyContent: "space-between" }}
+              >
                 • Project Status Document 1
               </Text>
               <Text fz={20} fw={"normal"}>
@@ -154,6 +175,7 @@ function Milestone() {
               gap: 20,
               justifyContent: "space-between",
             }}
+            data-aos="fade-up"
           >
             <Paper
               w={"90%"}
@@ -162,8 +184,15 @@ function Milestone() {
               radius={20}
               style={{ display: "grid", alignItems: "center" }}
             >
-              <Text fz={30} fw={"normal"}>
-                • Progress Presentation 1
+              <Text
+                fz={30}
+                fw={"normal"}
+                style={{ display: "flex", justifyContent: "space-between" }}
+              >
+                • Progress Presentation 1{" "}
+                <Text fz={20} fw={"normal"}>
+                  Marks-15%
+                </Text>
               </Text>
               <Text fz={20} fw={"normal"}>
                 The first progress presentation. The progress of the project was
@@ -188,6 +217,7 @@ function Milestone() {
               gap: 20,
               justifyContent: "space-between",
             }}
+            data-aos="fade-up"
           >
             <Paper
               w={"90%"}
@@ -196,8 +226,15 @@ function Milestone() {
               radius={20}
               style={{ display: "grid", alignItems: "center" }}
             >
-              <Text fz={30} fw={"normal"}>
-                • Research Paper
+              <Text
+                fz={30}
+                fw={"normal"}
+                style={{ display: "flex", justifyContent: "space-between" }}
+              >
+                • Research Paper{" "}
+                <Text fz={20} fw={"normal"}>
+                  Marks-10%
+                </Text>
               </Text>
               <Text fz={20} fw={"normal"}>
                 A research paper was created utilizing all the knowledge
@@ -221,6 +258,7 @@ function Milestone() {
               gap: 20,
               justifyContent: "space-between",
             }}
+            data-aos="fade-up"
           >
             <Paper
               w={"90%"}
@@ -229,8 +267,15 @@ function Milestone() {
               radius={20}
               style={{ display: "grid", alignItems: "center" }}
             >
-              <Text fz={30} fw={"normal"}>
-                • Progress Presentation 2
+              <Text
+                fz={30}
+                fw={"normal"}
+                style={{ display: "flex", justifyContent: "space-between" }}
+              >
+                • Progress Presentation 2{" "}
+                <Text fz={20} fw={"normal"}>
+                  Marks-18%
+                </Text>
               </Text>
               <Text fz={20} fw={"normal"}>
                 The second progress presentation. The progress of the project
@@ -255,6 +300,7 @@ function Milestone() {
               gap: 20,
               justifyContent: "space-between",
             }}
+            data-aos="fade-up"
           >
             <Paper
               w={"90%"}
@@ -263,8 +309,15 @@ function Milestone() {
               radius={20}
               style={{ display: "grid", alignItems: "center" }}
             >
-              <Text fz={30} fw={"normal"}>
-                • Final Report
+              <Text
+                fz={30}
+                fw={"normal"}
+                style={{ display: "flex", justifyContent: "space-between" }}
+              >
+                • Final Report{" "}
+                <Text fz={20} fw={"normal"}>
+                  Marks-19%
+                </Text>
               </Text>
               <Text fz={20} fw={"normal"}>
                 Describes the work carried out throughout the year in detail in
@@ -288,6 +341,7 @@ function Milestone() {
               gap: 20,
               justifyContent: "space-between",
             }}
+            data-aos="fade-up"
           >
             <Paper
               w={"90%"}
@@ -296,8 +350,16 @@ function Milestone() {
               radius={20}
               style={{ display: "grid", alignItems: "center" }}
             >
-              <Text fz={30} fw={"normal"}>
-                • Website Assessment
+              <Text
+                fz={30}
+                fw={"normal"}
+                style={{ display: "flex", justifyContent: "space-between" }}
+              >
+                • Website Assessment{" "}
+                <Text fz={20} fw={"normal"}>
+                  {" "}
+                  Marks-02%
+                </Text>
               </Text>
               <Text fz={20} fw={"normal"}>
                 This website. This was developed as a static website in an
@@ -322,6 +384,7 @@ function Milestone() {
               gap: 20,
               justifyContent: "space-between",
             }}
+            data-aos="fade-up"
           >
             <Paper
               w={"90%"}
@@ -330,8 +393,15 @@ function Milestone() {
               radius={20}
               style={{ display: "grid", alignItems: "center" }}
             >
-              <Text fz={30} fw={"normal"}>
+              <Text
+                fz={30}
+                fw={"normal"}
+                style={{ display: "flex", justifyContent: "space-between" }}
+              >
                 • Final Presentation & Viva
+                <Text fz={20} fw={"normal"}>
+                  Marks-20%
+                </Text>
               </Text>
               <Text fz={20} fw={"normal"}>
                 The final presentation and viva. The completed project details
@@ -359,9 +429,11 @@ function Milestone() {
             alignItems: "center",
             gap: 2,
           }}
+          data-aos="fade-up"
         >
           <div
             style={{ backgroundColor: "#CD5656", width: 10, height: "10%" }}
+            data-aos="fade-up"
           />
           <div
             style={{
@@ -370,9 +442,11 @@ function Milestone() {
               height: 30,
               borderRadius: 50,
             }}
+            data-aos="fade-up"
           />
           <div
             style={{ backgroundColor: "#CD5656", width: 10, height: "10%" }}
+            data-aos="fade-up"
           />
           <div
             style={{
@@ -381,9 +455,11 @@ function Milestone() {
               height: 30,
               borderRadius: 50,
             }}
+            data-aos="fade-up"
           />
           <div
             style={{ backgroundColor: "#CD5656", width: 10, height: "10%" }}
+            data-aos="fade-up"
           />
           <div
             style={{
@@ -392,9 +468,11 @@ function Milestone() {
               height: 30,
               borderRadius: 50,
             }}
+            data-aos="fade-up"
           />
           <div
             style={{ backgroundColor: "#CD5656", width: 10, height: "10%" }}
+            data-aos="fade-up"
           />
           <div
             style={{
@@ -403,9 +481,11 @@ function Milestone() {
               height: 30,
               borderRadius: 50,
             }}
+            data-aos="fade-up"
           />{" "}
           <div
             style={{ backgroundColor: "#CD5656", width: 10, height: "10%" }}
+            data-aos="fade-up"
           />
           <div
             style={{
@@ -414,9 +494,11 @@ function Milestone() {
               height: 30,
               borderRadius: 50,
             }}
+            data-aos="fade-up"
           />{" "}
           <div
             style={{ backgroundColor: "#CD5656", width: 10, height: "10%" }}
+            data-aos="fade-up"
           />
           <div
             style={{
@@ -425,9 +507,11 @@ function Milestone() {
               height: 30,
               borderRadius: 50,
             }}
+            data-aos="fade-up"
           />{" "}
           <div
             style={{ backgroundColor: "#CD5656", width: 10, height: "10%" }}
+            data-aos="fade-up"
           />
           <div
             style={{
@@ -436,9 +520,11 @@ function Milestone() {
               height: 30,
               borderRadius: 50,
             }}
+            data-aos="fade-up"
           />{" "}
           <div
             style={{ backgroundColor: "#CD5656", width: 10, height: "10%" }}
+            data-aos="fade-up"
           />
           <div
             style={{
@@ -447,9 +533,11 @@ function Milestone() {
               height: 30,
               borderRadius: 50,
             }}
+            data-aos="fade-up"
           />{" "}
           <div
             style={{ backgroundColor: "#CD5656", width: 10, height: "10%" }}
+            data-aos="fade-up"
           />
           <div
             style={{
@@ -458,6 +546,7 @@ function Milestone() {
               height: 30,
               borderRadius: 50,
             }}
+            data-aos="fade-up"
           />
         </Grid.Col>
       </Grid>

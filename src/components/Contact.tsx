@@ -22,6 +22,12 @@ import logoImage from "../images/logo.png";
 
 function Contact() {
   const isMobile = useMediaQuery("(max-width: 850px)");
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
 
   return (
     <Paper
@@ -57,6 +63,7 @@ function Contact() {
             border: "1px solid #CD5656",
             borderRadius: 30,
           }}
+          data-aos="fade-up"
         >
           <div
             style={{
@@ -71,12 +78,23 @@ function Contact() {
             </Text>
           </div>
 
-          <TextInput placeholder="Enter your name" w={"50%"} />
-          <TextInput placeholder="Enter a valid email address" w={"50%"} />
           <TextInput
+            label="Enter your name"
+            placeholder="Enter your name"
+            w={"50%"}
+            styles={{ input: { border: "1px solid #CD5656" } }}
+          />
+          <TextInput
+            label="Enter a valid email address"
+            placeholder="Enter a valid email address"
+            w={"50%"}
+            styles={{ input: { border: "1px solid #CD5656" } }}
+          />
+          <TextInput
+            label="Enter your message"
             placeholder="Enter your message"
             w={"50%"}
-            styles={{ input: { height: 200 } }}
+            styles={{ input: { height: 200, border: "1px solid #CD5656" } }}
           />
           <div style={{ display: "flex", justifyContent: "end", width: "50%" }}>
             <Button radius={10} bg={"#CD5656"} mt={20}>

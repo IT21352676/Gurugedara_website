@@ -33,9 +33,16 @@ import androidstudio from "../images/android-studio-icon.png";
 import github from "../images/github-logo.png";
 import jupiternotebook from "../images/jupyter-notebook.png";
 
+import methodologyImage from "../images/methology.jpeg";
+
 function Domain() {
   const isMobile = useMediaQuery("(max-width: 850px)");
-
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
   return (
     <Paper
       pl={isMobile ? 16 : 80}
@@ -52,7 +59,11 @@ function Domain() {
             </Text>
           </Paper>
         </Grid.Col>
-        <Grid.Col span={isMobile ? 12 : 6} mt={isMobile ? 40 : 80}>
+        <Grid.Col
+          span={isMobile ? 12 : 6}
+          mt={isMobile ? 40 : 80}
+          data-aos="fade-up"
+        >
           <Text fw={700} fz={30}>
             Literture survey
           </Text>
@@ -84,11 +95,12 @@ function Domain() {
             alignItems: "center",
             justifyContent: "center",
           }}
+          data-aos="fade-up"
         >
           <Image src={logoImage} w={"75%"} radius={20} />
         </Grid.Col>
 
-        <Grid.Col span={12} mt={80}>
+        <Grid.Col span={12} mt={80} data-aos="fade-up">
           <Text fw={700} fz={30}>
             Research gap
           </Text>{" "}
@@ -104,6 +116,7 @@ function Domain() {
               borderRadius: 20,
               padding: 25,
             }}
+            data-aos="fade-up"
           >
             <Text fw={700} fz={25}>
               1. Identification of Dyslexia and Dyscalculia in Early Education
@@ -145,6 +158,7 @@ function Domain() {
               borderRadius: 20,
               padding: 25,
             }}
+            data-aos="fade-up"
           >
             {" "}
             <Text fw={700} fz={25}>
@@ -187,6 +201,7 @@ function Domain() {
               borderRadius: 20,
               padding: 25,
             }}
+            data-aos="fade-up"
           >
             <Text fw={700} fz={25}>
               2. Personalized Sinhala Language Learning for Dyslexic Students
@@ -227,6 +242,7 @@ function Domain() {
               borderRadius: 20,
               padding: 25,
             }}
+            data-aos="fade-up"
           >
             <Text fw={700} fz={25}>
               4. Social Skills Development Integration
@@ -264,7 +280,7 @@ function Domain() {
         </Grid.Col>
 
         <Grid style={{ marginTop: 80 }}>
-          <Grid.Col span={isMobile ? 12 : 6} mt={80}>
+          <Grid.Col span={isMobile ? 12 : 6} mt={80} data-aos="fade-up">
             <Text fw={700} fz={30}>
               Research problem
             </Text>
@@ -283,7 +299,11 @@ function Domain() {
               skills.{" "}
             </Text>
           </Grid.Col>
-          <Grid.Col span={isMobile ? 12 : 6} mt={isMobile ? 0 : 125}>
+          <Grid.Col
+            span={isMobile ? 12 : 6}
+            mt={isMobile ? 0 : 125}
+            data-aos="fade-up"
+          >
             <Text fw={400} fz={20} mt={40} pr={40}>
               Although machine learning has shown promise in various sectors,
               its application in special education within the Sri Lankan context
@@ -297,8 +317,7 @@ function Domain() {
               relevant solution.{" "}
             </Text>
           </Grid.Col>
-
-          <Grid.Col mt={80}>
+          <Grid.Col mt={80} data-aos="fade-up">
             <Text fw={700} fz={30}>
               Research objectives
             </Text>
@@ -350,8 +369,13 @@ function Domain() {
             </List>
           </Grid.Col>
           <Grid.Col mt={80}>
-            <Text fw={700} fz={30}>
-              Technologies
+            <Text fw={700} fz={30} data-aos="fade-up">
+              Methodology
+            </Text>
+            <Text fz={20} fw={400} mt={20}>
+              The methodology involves a system to support primary education
+              students with special needs through a mobile interface. Here's a
+              simple breakdown
             </Text>
 
             <List
@@ -362,12 +386,70 @@ function Domain() {
                 </ThemeIcon>
               }
               mt={40}
-              spacing="md"
+              spacing="xl"
               size={"xl"}
               center
-            ></List>
+              data-aos="fade-up"
+            >
+              <List.Item>
+                Users: Teachers, parents, and students interact with the system.
+              </List.Item>
+              <List.Item>
+                Mobile Interface: Users access the system via a mobile app,
+                sending requests through API calls.
+              </List.Item>
+              <List.Item>
+                REST API Development: Acts as the bridge, connecting the mobile
+                app to the backend.
+              </List.Item>
+              <List.Item>
+                Backend Process: Handles four main areas{" "}
+                <List withPadding listStyleType="number" mt={20}>
+                  <List.Item>
+                    Identify & Analyze Disability: Uses analyzing and neural
+                    networks to assess disabilities, then applies algorithms to
+                    predict results.
+                  </List.Item>
+                  <List.Item>
+                    Implement Sinhala Lessons: Processes data with computer
+                    vision, applies algorithms, and predicts outcomes for
+                    Sinhala education.
+                  </List.Item>{" "}
+                  <List.Item>
+                    Implement Math Lessons: Uses preprocessing and computer
+                    vision, applies algorithms, and predicts results for math
+                    education.
+                  </List.Item>{" "}
+                  <List.Item>
+                    Implement Social Skills & Emotions: Processes data, uses
+                    segmentation, applies algorithms, and predicts
+                    social/emotional outcomes.
+                  </List.Item>
+                </List>
+              </List.Item>
+              <List.Item>
+                Database: Stores and retrieves data (e.g., view, store) to
+                support the process.
+              </List.Item>
+              <List.Item>
+                Flow: Data moves from the database to the REST API, then to the
+                backend for processing, and back to users with predicted
+                results.
+              </List.Item>
+            </List>
+            <div
+              style={{ display: "flex", justifyContent: "center" }}
+              data-aos="fade-up"
+            >
+              <Image mt={40} src={methodologyImage} w={"50%"} />
+            </div>
+          </Grid.Col>{" "}
+          <Grid.Col mt={40} data-aos="fade-up">
+            <Text fw={700} fz={30}>
+              Technologies
+            </Text>
           </Grid.Col>
-          <Grid.Col mt={40}>
+          <Grid.Col mt={40} data-aos="fade-up">
             <div style={{ display: "flex", justifyContent: "space-evenly" }}>
               <div
                 style={{

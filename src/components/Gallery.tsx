@@ -29,7 +29,12 @@ import { Carousel } from "@mantine/carousel";
 
 function Gallery() {
   const isMobile = useMediaQuery("(max-width: 850px)");
-
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
   return (
     <Paper
       pl={isMobile ? 16 : 80}
@@ -51,46 +56,78 @@ function Gallery() {
             </Text>
           </Paper>
         </Grid.Col>
-        <Grid.Col mt={80}>
+        <Grid.Col mt={80} data-aos="fade-up">
           <Carousel
-            slideSize="33.33333%"
-            slideGap="md"
-            align={"center"}
+            slideSize="25%"
+            slideGap="xl"
+            align={"end"}
             loop
             withIndicators
           >
             <Carousel.Slide>
               {" "}
-              <Image src={frame7} w={"70%"} />
+              <Image
+                src={frame7}
+                //  w={"70%"}
+                style={{ border: "1px solid black", borderRadius: 20 }}
+              />
             </Carousel.Slide>
             <Carousel.Slide>
               {" "}
-              <Image src={frame1} w={"70%"} />
+              <Image
+                src={frame1}
+                // w={"70%"}
+                style={{ border: "1px solid black", borderRadius: 20 }}
+              />
             </Carousel.Slide>
             <Carousel.Slide>
               {" "}
-              <Image src={frame2} w={"70%"} />
+              <Image
+                src={frame2}
+                // w={"70%"}
+                style={{ border: "1px solid black", borderRadius: 20 }}
+              />
             </Carousel.Slide>
             <Carousel.Slide>
               {" "}
-              <Image src={frame3} w={"70%"} />
+              <Image
+                src={frame3}
+                // w={"70%"}
+                style={{ border: "1px solid black", borderRadius: 20 }}
+              />
             </Carousel.Slide>
             <Carousel.Slide>
               {" "}
-              <Image src={frame4} w={"70%"} />
+              <Image
+                src={frame4}
+                //w={"70%"}
+                style={{ border: "1px solid black", borderRadius: 20 }}
+              />
             </Carousel.Slide>
             <Carousel.Slide>
               {" "}
-              <Image src={frame5} w={"70%"} />
+              <Image
+                src={frame5}
+                //w={"70%"}
+                style={{ border: "1px solid black", borderRadius: 20 }}
+              />
             </Carousel.Slide>
 
             <Carousel.Slide>
               {" "}
-              <Image src={frame6} w={"70%"} />
+              <Image
+                src={frame6}
+                //w={"70%"}
+                style={{ border: "1px solid black", borderRadius: 20 }}
+              />
             </Carousel.Slide>
             <Carousel.Slide>
               {" "}
-              <Image src={frame} w={"70%"} />
+              <Image
+                src={frame}
+                //w={"70%"}
+                style={{ border: "1px solid black", borderRadius: 20 }}
+              />
             </Carousel.Slide>
           </Carousel>
         </Grid.Col>

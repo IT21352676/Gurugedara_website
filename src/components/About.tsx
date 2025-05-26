@@ -27,6 +27,12 @@ import externalImage from "../images/Kanthi-Fonseka.png";
 
 function About() {
   const isMobile = useMediaQuery("(max-width: 850px)");
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
 
   return (
     <Paper
@@ -45,7 +51,11 @@ function About() {
           </Paper>
         </Grid.Col>
 
-        <Grid.Col style={{ display: "flex", justifyContent: "center" }} mt={80}>
+        <Grid.Col
+          style={{ display: "flex", justifyContent: "center" }}
+          mt={80}
+          data-aos="fade-up"
+        >
           <Text fz={30} fw={500}>
             Our team
           </Text>
@@ -53,6 +63,7 @@ function About() {
         <Grid.Col
           mt={80}
           style={{ display: "flex", justifyContent: "space-evenly" }}
+          data-aos="fade-up"
         >
           <Paper
             h={300}
@@ -81,6 +92,9 @@ function About() {
               <Text fz={20} fw={400}>
                 Ms. Jenny Kishara
               </Text>
+              <Anchor target="_blank" href="jenny.k@sliit.lk">
+                jenny.k@sliit.lk
+              </Anchor>
             </div>
           </Paper>
           <Paper
@@ -114,6 +128,9 @@ function About() {
               <Text fz={20} fw={400}>
                 Mr. Vishan Jayasinghearachchi
               </Text>
+              <Anchor target="_blank" href="vishan.j@sliit.lk">
+                vishan.j@sliit.lk
+              </Anchor>
             </div>
           </Paper>
           <Paper
@@ -153,6 +170,7 @@ function About() {
         <Grid.Col
           mt={80}
           style={{ display: "flex", justifyContent: "space-evenly" }}
+          data-aos="fade-up"
         >
           <Paper
             h={300}
@@ -181,6 +199,9 @@ function About() {
               <Text fz={20} fw={400}>
                 Chamodi W.A.K.D
               </Text>
+              <Anchor target="_blank" href="it21223426@my.sliit.lk">
+                it21223426@my.sliit.lk
+              </Anchor>
             </div>
           </Paper>
           <Paper
@@ -209,6 +230,9 @@ function About() {
               <Text fz={20} fw={400}>
                 Sasanka S.G.H.K
               </Text>
+              <Anchor target="_blank" href="it21352676@my.sliit.lk">
+                it21352676@my.sliit.lk
+              </Anchor>
             </div>
           </Paper>
           <Paper
@@ -237,6 +261,9 @@ function About() {
               <Text fz={20} fw={400}>
                 L.P.A.Thushantha
               </Text>
+              <Anchor target="_blank" href="it21229770@my.sliit.lk">
+                it21229770@my.sliit.lk
+              </Anchor>
             </div>
           </Paper>
 
@@ -266,6 +293,9 @@ function About() {
               <Text fz={20} fw={400}>
                 Wickramasinghe B.K
               </Text>
+              <Anchor target="_blank" href="it21290442@my.sliit.lk">
+                it21290442@my.sliit.lk
+              </Anchor>
             </div>
           </Paper>
         </Grid.Col>

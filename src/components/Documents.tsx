@@ -28,6 +28,12 @@ import logoImage from "../images/logo.png";
 
 function Documents() {
   const isMobile = useMediaQuery("(max-width: 850px)");
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
 
   return (
     <Paper
@@ -47,62 +53,54 @@ function Documents() {
         </Grid.Col>
         <Grid.Col mt={80}>
           <div style={{ display: "flex", justifyContent: "space-evenly" }}>
-            <Text fz={20}>
-              {" "}
-              <ThemeIcon color="#CD5656" size={24} radius="xl" mr={5}>
-                <IconCircleFilled size={10} />
-              </ThemeIcon>
-              Topic Assesment
-            </Text>
-            <Text fz={20}>
-              {" "}
-              <ThemeIcon color="#CD5656" size={24} radius="xl" mr={5}>
-                <IconCircleFilled size={10} />
-              </ThemeIcon>
-              Project Charter
-            </Text>
-            <Text fz={20}>
-              {" "}
-              <ThemeIcon color="#CD5656" size={24} radius="xl" mr={5}>
-                <IconCircleFilled size={10} />
-              </ThemeIcon>
-              Project Proposal
-            </Text>
-            <Text fz={20}>
-              {" "}
-              <ThemeIcon color="#CD5656" size={24} radius="xl" mr={5}>
-                <IconCircleFilled size={10} />
-              </ThemeIcon>
-              Status Documents
-            </Text>
-            <Text fz={20}>
-              {" "}
-              <ThemeIcon color="#CD5656" size={24} radius="xl" mr={5}>
-                <IconCircleFilled size={10} />
-              </ThemeIcon>
-              Research Paper
-            </Text>
-            <Text fz={20}>
-              {" "}
-              <ThemeIcon color="#CD5656" size={24} radius="xl" mr={5}>
-                <IconCircleFilled size={10} />
-              </ThemeIcon>
-              Research Logobook
-            </Text>
-            <Text fz={20}>
-              {" "}
-              <ThemeIcon color="#CD5656" size={24} radius="xl" mr={5}>
-                <IconCircleFilled size={10} />
-              </ThemeIcon>
-              Final report
-            </Text>
-            <Text fz={20}>
-              {" "}
-              <ThemeIcon color="#CD5656" size={24} radius="xl" mr={5}>
-                <IconCircleFilled size={10} />
-              </ThemeIcon>
-              Research Poster
-            </Text>
+            <Anchor
+              href="https://drive.google.com/drive/folders/1YHNJXvd883obT925hgkX-hRsM54YFc4k?usp=sharing"
+              target="_blank"
+            >
+              <Text fz={20}>
+                {" "}
+                <ThemeIcon color="#CD5656" size={24} radius="xl" mr={5}>
+                  <IconCircleFilled size={10} />
+                </ThemeIcon>
+                Project Charter
+              </Text>
+            </Anchor>
+            <Anchor
+              href="https://drive.google.com/drive/folders/1Y8s--xw9grwoaibhaLdQWO_6B-KyO4-j?usp=sharing"
+              target="_blank"
+            >
+              <Text fz={20}>
+                {" "}
+                <ThemeIcon color="#CD5656" size={24} radius="xl" mr={5}>
+                  <IconCircleFilled size={10} />
+                </ThemeIcon>
+                Project Proposal
+              </Text>
+            </Anchor>
+            <Anchor
+              href="https://drive.google.com/drive/folders/1AEobzoCmJK0rTkFqiDU9axtozSAhtNz_?usp=sharing"
+              target="_blank"
+            >
+              <Text fz={20}>
+                {" "}
+                <ThemeIcon color="#CD5656" size={24} radius="xl" mr={5}>
+                  <IconCircleFilled size={10} />
+                </ThemeIcon>
+                Check List Documents
+              </Text>
+            </Anchor>
+            <Anchor
+              href="https://drive.google.com/drive/folders/1OPdVUik2WdKZ-oqM1UwQJDX4hWn6jJeA?usp=sharing"
+              target="_blank"
+            >
+              <Text fz={20}>
+                {" "}
+                <ThemeIcon color="#CD5656" size={24} radius="xl" mr={5}>
+                  <IconCircleFilled size={10} />
+                </ThemeIcon>
+                Final Document
+              </Text>
+            </Anchor>
           </div>
         </Grid.Col>
       </Grid>

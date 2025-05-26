@@ -18,6 +18,13 @@ import homeImage from "../images/home.png";
 function Home() {
   const isMobile = useMediaQuery("(max-width: 850px)");
 
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
+
   return (
     <Paper
       pl={isMobile ? 16 : 80}
@@ -30,11 +37,16 @@ function Home() {
         <Grid.Col
           span={isMobile ? 12 : 6}
           style={{ display: "grid", justifyItems: "center" }}
+          data-aos="fade-up"
         >
           <Image src={homeImage} w={"75%"} radius={20} />
         </Grid.Col>
 
-        <Grid.Col span={isMobile ? 12 : 6} mt={isMobile ? 40 : 80}>
+        <Grid.Col
+          span={isMobile ? 12 : 6}
+          mt={isMobile ? 40 : 80}
+          data-aos="fade-up"
+        >
           <Text
             fw={900}
             fz={isMobile ? 30 : 80}
