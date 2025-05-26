@@ -1,13 +1,4 @@
-import { Title, Text, Paper, Grid, Image, Anchor } from "@mantine/core";
-import {
-  IconBrandDocker,
-  IconBrandFigma,
-  IconBrandGithub,
-  IconBrandLinkedin,
-  IconMapPin,
-  IconPointFilled,
-} from "@tabler/icons-react";
-import profile from "../images/profile/profile.jpg";
+import { Text, Paper, Grid, Image } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import "animate.css";
 import { useEffect } from "react";
@@ -60,7 +51,7 @@ function Home() {
             fw={400}
             fz={isMobile ? 20 : 40}
             c={"#CD5656"}
-            mt={isMobile ? 40 : 40}
+            mt={40}
           >
             Lesson Delivery System for Primary School Students with Dyslexia and
             Dyscalculia in Sinhala

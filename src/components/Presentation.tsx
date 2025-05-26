@@ -1,23 +1,10 @@
-import {
-  Title,
-  Text,
-  Paper,
-  Grid,
-  Image,
-  Anchor,
-  List,
-  ThemeIcon,
-  NavLink,
-  Button,
-} from "@mantine/core";
-import { IconCircleFilled, IconPresentation } from "@tabler/icons-react";
-import profile from "../images/profile/profile.jpg";
+import { Text, Paper, Grid, Anchor, Button } from "@mantine/core";
+import { IconPresentation } from "@tabler/icons-react";
+
 import { useMediaQuery } from "@mantine/hooks";
 import "animate.css";
-import { useEffect } from "react";
-import AOS from "aos";
+
 import "aos/dist/aos.css";
-import logoImage from "../images/logo.png";
 
 function Presentation() {
   const isMobile = useMediaQuery("(max-width: 850px)");

@@ -1,7 +1,6 @@
-import { Text, Button, Paper, Drawer, Modal, Image } from "@mantine/core";
+import { Text, Paper, Drawer, Image } from "@mantine/core";
 import { useDisclosure, useMediaQuery } from "@mantine/hooks";
-import { IconCode, IconMenu2, IconRocket } from "@tabler/icons-react";
-import { useState } from "react";
+import { IconMenu2 } from "@tabler/icons-react";
 
 import logo from "../images/logo.png";
 

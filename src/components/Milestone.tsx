@@ -1,30 +1,9 @@
-import {
-  Title,
-  Text,
-  Paper,
-  Grid,
-  Image,
-  Anchor,
-  List,
-  ThemeIcon,
-} from "@mantine/core";
-import {
-  IconBrandDocker,
-  IconBrandFigma,
-  IconBrandGithub,
-  IconBrandLinkedin,
-  IconCircle,
-  IconCircleFilled,
-  IconMapPin,
-  IconPointFilled,
-} from "@tabler/icons-react";
-import profile from "../images/profile/profile.jpg";
+import { Text, Paper, Grid } from "@mantine/core";
+
 import { useMediaQuery } from "@mantine/hooks";
 import "animate.css";
-import { useEffect } from "react";
-import AOS from "aos";
+
 import "aos/dist/aos.css";
-import logoImage from "../images/logo.png";
 
 function Milestone() {
   const isMobile = useMediaQuery("(max-width: 850px)");

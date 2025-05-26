@@ -1,6 +1,4 @@
 import { Text, Paper, Grid, Image } from "@mantine/core";
-import { IconCircleFilled, IconPresentation } from "@tabler/icons-react";
-import profile from "../images/profile/profile.jpg";
 import { useMediaQuery } from "@mantine/hooks";
 import "animate.css";
 import { useEffect } from "react";

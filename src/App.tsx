@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import "./App.css";
 import TopBar from "./components/TopBar";
 
@@ -54,49 +54,47 @@ function App() {
 
   return (
     <div>
-      <>
-        <div>
-          <TopBar
-            onNavigate={{
-              home: () => handleScrollTo(homeRef),
-              domain: () => handleScrollTo(domainRef),
-              milestone: () => handleScrollTo(milestoneRef),
-              document: () => handleScrollTo(documentRef),
-              presentation: () => handleScrollTo(presentationRef),
-              about: () => handleScrollTo(aboutRef),
-              contact: () => handleScrollTo(contactRef),
-            }}
-          />
-        </div>
+      <div>
+        <TopBar
+          onNavigate={{
+            home: () => handleScrollTo(homeRef),
+            domain: () => handleScrollTo(domainRef),
+            milestone: () => handleScrollTo(milestoneRef),
+            document: () => handleScrollTo(documentRef),
+            presentation: () => handleScrollTo(presentationRef),
+            about: () => handleScrollTo(aboutRef),
+            contact: () => handleScrollTo(contactRef),
+          }}
+        />
+      </div>
 
-        <div ref={domainRef}>
-          <Home />
-        </div>
-        <div ref={domainRef}>
-          <Domain />
-        </div>
-        <div ref={milestoneRef}>
-          <Milestone />
-        </div>
-        <div>
-          <Gallery />
-        </div>
-        <div ref={documentRef}>
-          <Documents />
-        </div>
-        <div ref={presentationRef}>
-          <Presentation />
-        </div>
-        <div ref={aboutRef}>
-          <About />
-        </div>
-        <div ref={contactRef}>
-          <Contact />
-        </div>
-        <div>
-          <BottomBar />
-        </div>
-      </>
+      <div ref={domainRef}>
+        <Home />
+      </div>
+      <div ref={domainRef}>
+        <Domain />
+      </div>
+      <div ref={milestoneRef}>
+        <Milestone />
+      </div>
+      <div>
+        <Gallery />
+      </div>
+      <div ref={documentRef}>
+        <Documents />
+      </div>
+      <div ref={presentationRef}>
+        <Presentation />
+      </div>
+      <div ref={aboutRef}>
+        <About />
+      </div>
+      <div ref={contactRef}>
+        <Contact />
+      </div>
+      <div>
+        <BottomBar />
+      </div>
     </div>
   );
 }
